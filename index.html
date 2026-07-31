@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnets de Route — Photographie de voyage & faune sauvage</title>
+<meta name="description" content="Portfolio photo — faune sauvage et paysages de Namibie, Costa Rica et Norvège.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark">Carnets&nbsp;de&nbsp;Route</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#galerie">Galerie</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__frame">
+    <img class="hero__img" src="images/hero/red-dune-namibia.JPG" alt="Dune rouge, Namibie"
+         onerror="handleMissingImage(this, '16:9, paysage, ~2400px de large')">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <p class="hero__coords">24.7461° S, 15.2663° E — NAMIBIE</p>
+    <h1 class="hero__title">Trois continents,<br>un même regard.</h1>
+    <p class="hero__sub">Photographe voyageur — faune sauvage &amp; paysages d'Afrique australe, d'Amérique centrale et de Scandinavie.</p>
+  </div>
+  <a href="#galerie" class="hero__scroll" aria-label="Défiler vers la galerie">
+    <span></span>
+  </a>
+</section>
+
+<main>
+
+  <!-- GALERIE -->
+  <section class="galerie" id="galerie">
+
+    <!-- EXPEDITION 01 — NAMIBIE -->
+    <div class="expedition" data-accent="namibia">
+      <div class="expedition__header">
+        <span class="expedition__index">01</span>
+        <div>
+          <p class="expedition__coords">18.9 – 24.8° S · 15.0 – 16.4° E</p>
+          <h2 class="expedition__title">Namibie</h2>
+          <p class="expedition__desc">Parc national d'Etosha &amp; les dunes de Sossusvlei / Deadvlei.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/01-wildebeest.JPG" alt="Gnou dans le parc national d'Etosha"
+                 onerror="handleMissingImage(this, '01-wildebeest.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Wildebeest in Etosha National Park</span>
+            <span class="caption__desc">A wildebeest standing on the dry, cracked earth of Etosha National Park, Namibia.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/02-zebra.JPG" alt="Zèbre dans la nature"
+                 onerror="handleMissingImage(this, '02-zebra.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Zebra in the Wild</span>
+            <span class="caption__desc">A zebra standing in its natural habitat, showing its distinctive black and white stripes.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/03-three-red-dunes.JPG" alt="Trois dunes rouges"
+                 onerror="handleMissingImage(this, '03-three-red-dunes.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Three Red Dunes</span>
+            <span class="caption__desc">Three striking red sand dunes rising side by side in the Namibian desert.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/04-three-giraffes.JPG" alt="Trois girafes ensemble"
+                 onerror="handleMissingImage(this, '04-three-giraffes.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Three Giraffes Together</span>
+            <span class="caption__desc">Three giraffes standing together in the wild, showing their long necks and distinctive spotted patterns.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/05-lone-giraffe.JPG" alt="Girafe seule"
+                 onerror="handleMissingImage(this, '05-lone-giraffe.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Lone Giraffe</span>
+            <span class="caption__desc">A single giraffe standing alone in the wild, showing its long neck and spotted pattern.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/06-elephant.JPG" alt="Éléphant regardant la caméra"
+                 onerror="handleMissingImage(this, '06-elephant.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Elephant Looking at the Camera</span>
+            <span class="caption__desc">An elephant facing the camera, looking directly at the viewer.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/07-oryx.jpg" alt="Oryx en marche"
+                 onerror="handleMissingImage(this, '07-oryx.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Oryx on the Move</span>
+            <span class="caption__desc">An oryx walking through its natural habitat, showing its straight, long horns.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/08-kudu.JPG" alt="Kudu magnifique"
+                 onerror="handleMissingImage(this, '08-kudu.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Magnificent Kudu</span>
+            <span class="caption__desc">A beautiful kudu looking directly at the camera, showing its spiraled horns.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/09-antelope.JPG" alt="Antilope regardant la caméra"
+                 onerror="handleMissingImage(this, '09-antelope.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Antelope Looking at the Camera</span>
+            <span class="caption__desc">An antelope facing the camera, looking directly at the viewer.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/10-antelopes-resting.JPG" alt="Antilopes allongées"
+                 onerror="handleMissingImage(this, '10-antelopes-resting.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Antelopes Resting</span>
+            <span class="caption__desc">Several antelopes lying down together in the wild.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/11-farm-sunset.JPG" alt="Ferme au coucher du soleil"
+                 onerror="handleMissingImage(this, '11-farm-sunset.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Farm at Sunset</span>
+            <span class="caption__desc">A farm scene captured during a beautiful sunset.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/12-dunes-deadvlei.JPG" alt="Dunes près de Deadvlei"
+                 onerror="handleMissingImage(this, '12-dunes-deadvlei.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Dunes Near Deadvlei</span>
+            <span class="caption__desc">The iconic red dunes near Deadvlei, Namibia, with striking light and shadow contrasts.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/13-golden-light-dunes.JPG" alt="Dunes de Deadvlei en lumière dorée"
+                 onerror="handleMissingImage(this, '13-golden-light-dunes.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Deadvlei Dunes in Golden Light</span>
+            <span class="caption__desc">Sunlight casting dramatic patterns across the towering dunes near Deadvlei, Namibia.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/14-light-shadow-deadvlei.JPG" alt="Jeux de lumière à Deadvlei"
+                 onerror="handleMissingImage(this, '14-light-shadow-deadvlei.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Light and Shadow at Deadvlei</span>
+            <span class="caption__desc">The play of light and shadow across the sand dunes near Deadvlei, Namibia.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/15-red-dune.JPG" alt="Dune rouge"
+                 onerror="handleMissingImage(this, '15-red-dune.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Red Dune</span>
+            <span class="caption__desc">A striking red sand dune in Namibia, showcasing its vivid, warm color.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/16-moon.JPG" alt="Lune sur le désert"
+                 onerror="handleMissingImage(this, '16-moon.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Desert Moon</span>
+            <span class="caption__desc">The moon rising over the vast Namibian desert landscape.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/17-sand-corridor.JPG" alt="Couloir de sable entre les dunes"
+                 onerror="handleMissingImage(this, '17-sand-corridor.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Sand Corridor</span>
+            <span class="caption__desc">A narrow corridor carved between towering red sand dunes.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="namibia">
+          <div class="photo__frame">
+            <img src="images/namibia/18-sand-houses.JPG" alt="Maisons dans le sable"
+                 onerror="handleMissingImage(this, '18-sand-houses.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Houses in the Sand</span>
+            <span class="caption__desc">Structures half-buried in the drifting desert sand.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- EXPEDITION 02 — COSTA RICA -->
+    <div class="expedition" data-accent="costa-rica">
+      <div class="expedition__header">
+        <span class="expedition__index">02</span>
+        <div>
+          <p class="expedition__coords">10.4° N · 83.5° O</p>
+          <h2 class="expedition__title">Costa Rica</h2>
+          <p class="expedition__desc">Faune du littoral caraïbe et des canaux de Tortuguero.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/01-monkey-caribbean.jpg" alt="Singe surplombant la mer des Caraïbes"
+                 onerror="handleMissingImage(this, '01-monkey-caribbean.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Monkey Overlooking the Caribbean Sea</span>
+            <span class="caption__desc">A monkey sitting and gazing out at the Caribbean Sea, Costa Rica.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/02-crab-night.jpg" alt="Crabe sur une feuille de nuit"
+                 onerror="handleMissingImage(this, '02-crab-night.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Crab on a Leaf at Night</span>
+            <span class="caption__desc">A crab resting on a leaf, captured at night.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/03-fisherman-ali.jpg" alt="Pêcheur dans les hautes herbes de Tortuguero"
+                 onerror="handleMissingImage(this, '03-fisherman-ali.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Fisherman in the Tall Grass of Tortuguero</span>
+            <span class="caption__desc">Ali, a local fisherman, standing among the tall grasses of Tortuguero, Costa Rica.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/04-young-heron.jpg" alt="Jeune héron"
+                 onerror="handleMissingImage(this, '04-young-heron.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Young Heron</span>
+            <span class="caption__desc">A young heron captured in its natural surroundings.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/05-cormorant-drying.jpg" alt="Cormoran séchant ses ailes"
+                 onerror="handleMissingImage(this, '05-cormorant-drying.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Cormorant Drying Its Wings</span>
+            <span class="caption__desc">A cormorant perched with wings spread, drying itself in the sun.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/06-cormorant-bee.jpg" alt="Cormoran en gros plan avec une abeille"
+                 onerror="handleMissingImage(this, '06-cormorant-bee.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Cormorant Close-Up with a Passing Bee</span>
+            <span class="caption__desc">A close-up of the cormorant drying its wings, with a bee passing by.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/07-secret-beach.jpg" alt="Plage secrète parmi les cocotiers"
+                 onerror="handleMissingImage(this, '07-secret-beach.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Secret Beach Among the Coconut Trees</span>
+            <span class="caption__desc">A hidden beach nestled among coconut palm trees, Costa Rica.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="costa-rica">
+          <div class="photo__frame">
+            <img src="images/costa-rica/08-green-frog.jpg" alt="Grenouille verte"
+                 onerror="handleMissingImage(this, '08-green-frog.jpg')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Green Frog</span>
+            <span class="caption__desc">A green frog resting in the humid rainforest of Costa Rica.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- EXPEDITION 03 — NORVEGE -->
+    <div class="expedition" data-accent="norway">
+      <div class="expedition__header">
+        <span class="expedition__index">03</span>
+        <div>
+          <p class="expedition__coords">61 – 69° N · 5 – 18° E</p>
+          <h2 class="expedition__title">Norvège</h2>
+          <p class="expedition__desc">Fjords, toits de verdure et oiseaux côtiers.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <figure class="photo" data-group="norway">
+          <div class="photo__frame">
+            <img src="images/norway/01-red-house-fjord.JPG" alt="Maison rouge au bord du fjord"
+                 onerror="handleMissingImage(this, '01-red-house-fjord.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Red House by the Fjord</span>
+            <span class="caption__desc">A traditional red house with a grass roof, nestled by a Norwegian fjord.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="norway">
+          <div class="photo__frame">
+            <img src="images/norway/02-aigle-rock.JPG" alt="Aigle sur un rocher"
+                 onerror="handleMissingImage(this, '02-aigle-rock.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Eagle on a Rock</span>
+            <span class="caption__desc">An eagle perched on a rocky outcrop, Norway.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="norway">
+          <div class="photo__frame">
+            <img src="images/norway/03-redshank-treetop.JPG" alt="Chevalier gambette en cime d'arbre"
+                 onerror="handleMissingImage(this, '03-redshank-treetop.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Common Redshank on a Treetop</span>
+            <span class="caption__desc">A common redshank perched at the top of a tree.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-group="norway">
+          <div class="photo__frame">
+            <img src="images/norway/04-sheep-sea.JPG" alt="Moutons face à la mer"
+                 onerror="handleMissingImage(this, '04-sheep-sea.JPG')">
+          </div>
+          <figcaption class="caption">
+            <span class="caption__title">Sheep Facing the Sea</span>
+            <span class="caption__desc">A group of sheep standing and facing the sea, Norway.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="apropos" id="apropos">
+    <div class="apropos__portrait">
+      <img src="images/about/portrait.jpeg" alt="Portrait du photographe"
+           onerror="handleMissingImage(this, 'portrait.jpeg — format portrait 4:5')">
+    </div>
+    <div class="apropos__text">
+      <p class="apropos__eyebrow">À propos</p>
+      <h2 class="apropos__title">Un carnet de route, en images.</h2>
+      <p class="apropos__bio">Photographe voyageur de 25 ans, originaire de France. Passionné par la faune sauvage, j'aime capturer des moments authentiques lors de mes voyages, des plaines d'Etosha aux fjords norvégiens. Chaque photo raconte une rencontre avec un animal ou un paysage qui m'a marqué.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="contact__eyebrow">Contact</p>
+    <h2 class="contact__title">Une envie de collaboration<br>ou une question ?</h2>
+    <a class="contact__email" href="mailto:adrien.thomassin@gmail.com">adrien.thomassin@gmail.com</a>
+    <div class="contact__socials">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">·</span>
+      <a href="#" target="_blank" rel="noopener">500px</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Carnets de Route — France, 48.1° N</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">✕</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Photo précédente">‹</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <div class="lightbox__caption">
+    <span class="lightbox__title" id="lightboxTitle"></span>
+    <span class="lightbox__desc" id="lightboxDesc"></span>
+  </div>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Photo suivante">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
