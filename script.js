@@ -64,7 +64,6 @@ if (reduceMotion){
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const lightboxTitle = document.getElementById('lightboxTitle');
-const lightboxDesc = document.getElementById('lightboxDesc');
 const btnClose = document.getElementById('lightboxClose');
 const btnPrev = document.getElementById('lightboxPrev');
 const btnNext = document.getElementById('lightboxNext');
@@ -79,20 +78,34 @@ function openLightbox(photoEl){
   currentIndex = currentGroup.indexOf(photoEl);
   if (currentIndex === -1 || currentGroup.length === 0) return;
   renderLightbox();
+  trackPhotoView(photoEl);
   lightbox.classList.add('is-open');
   lightbox.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+}
+
+// Envoie un évènement "photo vue" à GoatCounter (si le script d'analytics est en place).
+// Chaque photo apparaîtra comme une ligne distincte dans le tableau de bord GoatCounter.
+function trackPhotoView(photoEl){
+  if (!window.goatcounter || !window.goatcounter.count) return;
+  const group = photoEl.dataset.group;
+  const img = photoEl.querySelector('img');
+  const slug = img.getAttribute('src').split('/').pop().replace(/\.[^.]+$/, '');
+  const titleEl = photoEl.querySelector('.caption__title');
+  window.goatcounter.count({
+    path: `photo-${group}-${slug}`,
+    title: titleEl ? titleEl.textContent : slug,
+    event: true
+  });
 }
 
 function renderLightbox(){
   const el = currentGroup[currentIndex];
   const img = el.querySelector('img');
   const title = el.querySelector('.caption__title').textContent;
-  const desc = el.querySelector('.caption__desc').textContent;
   lightboxImg.src = img.src;
   lightboxImg.alt = img.alt;
   lightboxTitle.textContent = title;
-  lightboxDesc.textContent = desc;
 }
 
 function closeLightbox(){
